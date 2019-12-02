@@ -1,4 +1,4 @@
-# Voice Based Hospital Management System
+# SuiV!
 An *annyang* based Hospital Management System. The website user documentation can be found in **static/vendor/docs.html** file. Provides basic functions like modifying and viewing doctor and patient details, and booking appointments.
 
 ## Requirements
