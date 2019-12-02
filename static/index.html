@@ -1,0 +1,210 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Bootstrap Admin App + jQuery">
+    <meta name="keywords" content="app, responsive, jquery, bootstrap, dashboard, admin">
+    <title>SuiV</title>
+    <!-- =============== VENDOR STYLES ===============-->
+    <!-- FONT AWESOME-->
+    <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css">
+    <!-- SIMPLE LINE ICONS-->
+    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+    <!-- ANIMATE.CSS-->
+    <link rel="stylesheet" href="vendor/animate.css/animate.min.css">
+    <!-- WHIRL (spinners)-->
+    <link rel="stylesheet" href="vendor/whirl/dist/whirl.css">
+    <!-- =============== PAGE VENDOR STYLES ===============-->
+    <!-- =============== BOOTSTRAP STYLES ===============-->
+    <link rel="stylesheet" href="app/css/bootstrap.css" id="bscss">
+    <!-- =============== APP STYLES ===============-->
+    <link rel="stylesheet" href="app/css/app.css" id="maincss">
+    <style>
+
+        a:hover {
+            text-decoration: none !important;
+        }
+    </style>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/SpeechKITT/0.3.0/speechkitt.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+</head>
+<body class="layout-h" >
+    <div class="wrapper" >
+        <!-- top navbar-->
+        <header class="topnavbar-wrapper">
+            <!-- START Top Navbar-->
+            <nav role="navigation" class="navbar topnavbar" >
+                <!-- START navbar header-->
+                <div class="navbar-header" style="background-color: #10178C;">
+                    <a href="#/" class="navbar-brand">
+                        <div class="brand-logo" style="padding-top:15px;">
+                            SuiV
+                        </div>
+                        <div class="brand-logo-collapsed">
+                            <img src="img/logo-single.png" alt="App Logo" class="img-responsive">
+                        </div>
+                    </a>
+                </div>
+                <!-- END navbar header-->
+                <!-- START Nav wrapper-->
+                <div class="nav-wrapper" style="background-color: #10178C;">
+                    
+                </div>
+                <!-- END Nav wrapper-->
+                <!-- START Search form-->
+                <form role="search" action="search.html" class="navbar-form">
+                    <div class="form-group has-feedback">
+                        <input type="text" placeholder="Type and hit enter ..." class="form-control">
+                        <div data-search-dismiss="" class="fa fa-times form-control-feedback"></div>
+                    </div>
+                    <button type="submit" class="hidden btn btn-default">Submit</button>
+                </form>
+                <!-- END Search form-->
+            </nav>
+            <!-- END Top Navbar-->
+        </header>
+        <!-- sidebar-->
+        <!-- offsidebar-->
+        <!-- Main section-->
+        <section>
+            <!-- Page content-->
+            <div class="content-wrapper">
+                <div class="content-heading">
+                    <!-- START Language list-->
+                    <!-- END Language list    -->
+                    Choose what to do ~
+                    <small data-localize="dashboard.WELCOME"></small>
+                </div>
+                
+                <div class="row" style="padding-top:130px;">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <!-- START widget-->
+                            <a href="patient.html">
+                                <div class="panel widget bg-success">
+                                    <div class="row row-table">
+                                        <div class="col-xs-4 text-center bg-success-dark pv-lg">
+                                            <em class="fa fa-wheelchair" style="font-size:44px"></em>
+                                        </div>
+                                        <div class="col-xs-8 pv-lg">
+                                            <div class="h1 m0 text-bold" id="patientcount"></div>
+                                            <div class="text-uppercase">Patient Details</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <a href="doctor.html">
+                                <!-- START widget-->
+                                <div class="panel widget bg-danger">
+                                    <div class="row row-table">
+                                        <div class="col-xs-4 text-center bg-danger-dark pv-lg">
+                                            <em class="fa fa-user-md" style="font-size:44px"></em>
+                                        </div>
+                                        <div class="col-xs-8 pv-lg">
+                                            <div class="h1 m0 text-bold" id="doctorcount"></div>
+                                            <div class="text-uppercase">Physician Details</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <a href="appointment.html">
+                                <!-- START widget-->
+                                <div class="panel widget bg-primary">
+                                    <div class="row row-table">
+                                        <div class="col-xs-4 text-center bg-primary-dark pv-lg">
+                                            <em class="fa fa-hospital-o" style="font-size:44px"></em>
+                                        </div>
+                                        <div class="col-xs-8 pv-lg">
+                                            <div class="h1 m0 text-bold" id="appointmentcount"></div>
+                                            <div class="text-uppercase">Book Appointment</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <h5 id="greeting"></h5>
+                </div>
+            </div>
+        </section>
+        <!-- Page footer-->
+        <footer style="background-color: #5C5D7C ;color:white;padding-bottom:12px;">
+            <span>&copy; 2019 - Bootstrap</span>   |
+            <a href="./vendor/docs.html" target="_blank" style="color:white; text-decoration:none;">Documentation</a>
+            <br/>
+            <p></p>
+        </footer>
+    </div>
+    <!-- =============== VENDOR SCRIPTS ===============-->
+    <!-- MODERNIZR-->
+    <script src="vendor/modernizr/modernizr.custom.js"></script>
+    <!-- JQUERY-->
+    <script src="vendor/jquery/dist/jquery.js"></script>
+    <!-- BOOTSTRAP-->
+    <script src="vendor/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- STORAGE API-->
+    <script src="vendor/jQuery-Storage-API/jquery.storageapi.js"></script>
+    <!-- JQUERY EASING-->
+    <script src="vendor/jquery.easing/js/jquery.easing.js"></script>
+    <!-- ANIMO-->
+    <script src="vendor/animo.js/animo.js"></script>
+    <!-- LOCALIZE-->
+    <script src="vendor/jquery-localize-i18n/dist/jquery.localize.js"></script>
+    <!-- =============== PAGE VENDOR SCRIPTS ===============-->
+    <!-- =============== APP SCRIPTS ===============-->
+  <script src="app/js/app.js"></script>
+    <script src="js/home.js"></script>
+
+    
+    <script>
+        "use strict";
+        if (annyang) {
+
+            var gotoApp = function () {
+                document.location.href = 'appointment.html';
+            }
+            var gotoPat = function () {
+                document.location.href = 'patient.html';
+            }
+            var gotoDoc = function () {
+                document.location.href = 'doctor.html';
+            }
+            var goBack = function () {
+                document.location.href = 'index.html';
+            }
+
+            // Let's define commands. First the text we expect, and then the function it should call -
+            var commands = { 
+                '(Go to) appointment(s)': gotoApp,
+                'Book appointment(s)': gotoApp,
+                '(Go to) blue': gotoApp,
+                '(Go to) patient details': gotoPat,
+                '(Go to) green': gotoPat,
+                '(Go to) doctor details': gotoDoc,
+                '(Go to) physician details': gotoDoc,
+                '(Go to) red': gotoDoc,
+                '(Go) back': goBack,
+                '(Go to) main page': goBack,
+                '(Go to) main menu': goBack
+            };
+
+            // Add our commands to annyang
+            annyang.addCommands(commands);
+            SpeechKITT.annyang();
+
+            // Define a stylesheet for KITT to use
+            SpeechKITT.setStylesheet('SKITT.css');
+
+            // Render KITTs interface
+            SpeechKITT.vroom();
+            // Start listening. You can call this here, or attach this call to an event, button, etc.
+            annyang.start({ autoRestart: true });
+        }
+    </script>
+</body>
+</html>
