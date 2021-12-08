@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/user_registration_bs4.css' %}">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://bootstrapmade.com/demo/themes/Regna/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+    <link href="https://bootstrapmade.com/demo/themes/Regna/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://bootstrapmade.com/demo/themes/Regna/lib/animate/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body id="main" style="background-color: #efebe4; padding-left: 0px; padding-right: 0px; padding-top: 0px; ">
+
+    <style type="text/css">
+        .section-header {
+            font-size: 32px;
+            color: #111;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        h5 {
+            font-size: 28px;
+            color: #111;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        h6 {
+            font-size: 20px;
+            color: #111;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        li {
+            text-align: left;
+            padding-bottom: 20px;
+            padding-left: 50px;
+            padding-right: 50px;
+            color: #29413c;
+        }
+
+        .list li {
+            text-align: left;
+            color: #29413c;
+        }
+    </style>
+    <br /><br />
+          <section>
+              <h2 class="section-header">User Documentation</h2>
+              <hr style="width: 50%;">
+              <div>
+                  <br>
+                  <h5>Introduction</h5><br>
+                  <li>
+                      This web application enables the user (admin) to keep track of the patients, physicians and appointments made in the hospital at any time. It offers auto-scaling, high availability and voice based assistant; supports all platforms as it works on browser. Learn how to use the application with this documentation.
+                  </li>
+              </div>
+
+              <div>
+                  <br>
+                  <h5>Getting Started</h5>
+
+                  <h6>Home Page</h6><br>
+
+                  <li />
+                  This page shows the current amount of patients, physicians and bookings.
+                  There are three functions that the <strong>home page</strong> holds for you.
+                  <ul class="list">
+                      <br />
+                      <li> Navigate to edit the patients' details through 'Patient Details' link.</li>
+                      <li> Navigate to edit the physicians' details through 'Physician Details' link.</li>
+                      <li> Finally, navigate to edit the appointments' details through 'Book Appointment' link. </li>
+                  </ul>
+                  </li>
+                  <li>
+                      The <strong>top navigation bar</strong> takes you to this homepage from anywhere in the application.
+                  </li>
+              </div>
+
+              <div>
+                  <br>
+                  <h5>The Search Function</h5><br>
+                  <li>
+                      This search bar is present in every page containing details of patients, physicians and appointments.
+                      The search returns the matched results in real time.
+                  </li>
+              </div>
+              <div>
+                  <h5>Handling Patient Details</h5><br />
+                  <li>
+                      This page contains a table (list) of all the patients with the information name, insurance, address and contact number.
+                  </li>
+                  <li>
+                      One can add a new patient by clicking the blue button 'Add Patient' and filling out the respective details shown.
+                      You can either save it by pressing the blue button or cancel the addition.
+                  </li>
+                  <li>
+                      You can edit or delete the respective entry as shown in the page.
+                  </li>
+
+              </div>
+              <div>
+                  <br>
+                  <h5>Handling Physician Details</h5><br>
+                  <li>
+                      This page contains a table (list) of all the physicians with the information name, address and contact number.
+                  </li>
+                  <li>
+                      One can add a new physician by clicking the blue button 'Add Physician' and filling out the respective details shown.
+                      You can either save it by pressing the blue button or cancel the addition.
+                  </li>
+                  <li>
+                      You can edit or delete the respective entry as shown in the page.
+                  </li>
+              </div>
+
+              <div>
+                  <br>
+                  <h5>Handling Appointment Bookings</h5><br>
+                  <li>
+                      This page contains a table (list) of all the appointments with the information physician name, patient name and appointment date-time.
+                  </li>
+                  <li>
+                      One can book an appointment by clicking the blue button 'Book Appointment' and filling out the respective details shown.
+                      You can either save it by pressing the blue button or cancel the addition.
+                  </li>
+                  <li>
+                      You can delete the respective entry as shown in the page after the appointment is done or if it's cancelled.
+                  </li>
+              </div>
+
+              <div>
+                  <br>
+                  <h5>Handling Voice Commands</h5><br>
+                  <li>
+                      The application comes with a voice assistant to assist you when your hands are full. Just follow this document to get a hang of it.
+                  </li>
+                  <li>
+                      <strong>Navigating between pages:</strong> You can do that by simply saying "Go to patient details..." or "Book appointments", 
+                      the application takes you to <strong>Patient Details</strong> page and <strong>Book Appointment</strong> page.
+                  </li>
+                  <li>
+                      You can add patients, physicians or book appointments through voice. Just say, "Add Patient" when in <strong>Patient Details</strong>
+                      page. The application automatically opens up a form. Say, "Save" to save the changes and add the patient to the database, or say "cancel"
+                      to cancel the current addition. 
+                  </li>
+                  <li>
+                      You can always say "Go back", from any page to go back to the <strong>Home Page</strong>.
+                  </li>
+              </div>
+          </section>
+</body>
+</html>
