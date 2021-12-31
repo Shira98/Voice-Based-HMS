@@ -17,3 +17,7 @@ Run the project using - ```python app.py```
 
 * Voice commands can be modified in the respective *html* files present in **static** folder.
 * **annyang** GitHub [repository link](https://github.com/TalAter/annyang "repository link title").
+
+## Citation 
+
+Base code forked from [Tushar Borole](https://github.com/tushariscoolster)'s GitHub [repository](https://github.com/tushariscoolster/HospitalManagementSystem).
